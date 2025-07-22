@@ -85,7 +85,7 @@ export function Navigation({ className }: NavigationProps) {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4">
           <Link href="/app">
-            <Button variant="ghost" size="sm">
+            <Button variant="outline" size="sm">
               Sign In
             </Button>
           </Link>
@@ -128,7 +128,7 @@ export function Navigation({ className }: NavigationProps) {
               </nav>
               <div className="mt-4 flex flex-col space-y-2">
                 <Link href="/app">
-                  <Button variant="ghost" size="sm" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full">
                     Sign In
                   </Button>
                 </Link>
