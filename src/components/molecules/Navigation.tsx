@@ -84,16 +84,14 @@ export function Navigation({ className }: NavigationProps) {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" size="sm" asChild>
-            <span>
-              <Link href="/app">Sign In</Link>
-            </span>
-          </Button>
-          <Button size="sm" asChild>
-            <span>
-              <Link href="/contact">Get Early Access</Link>
-            </span>
-          </Button>
+          <Link href="/app">
+            <Button variant="ghost" size="sm">
+              Sign In
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button size="sm">Get Early Access</Button>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -129,16 +127,16 @@ export function Navigation({ className }: NavigationProps) {
                 ))}
               </nav>
               <div className="mt-4 flex flex-col space-y-2">
-                <Button variant="ghost" size="sm" asChild>
-                  <span>
-                    <Link href="/app">Sign In</Link>
-                  </span>
-                </Button>
-                <Button size="sm" asChild>
-                  <span>
-                    <Link href="/contact">Get Early Access</Link>
-                  </span>
-                </Button>
+                <Link href="/app">
+                  <Button variant="ghost" size="sm" className="w-full">
+                    Sign In
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="sm" className="w-full">
+                    Get Early Access
+                  </Button>
+                </Link>
               </div>
             </div>
           </motion.div>
