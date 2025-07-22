@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Bodoni_Moda } from "next/font/google";
+import { ChatWidget } from "@/components/organisms/ChatWidget";
 import "./globals.css";
 
 const inter = Inter({
@@ -76,6 +77,7 @@ export default function RootLayout({
         className={`${inter.variable} ${bodoniModa.variable} font-ui antialiased`}
       >
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
