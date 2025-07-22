@@ -9,17 +9,13 @@ import {
   Camera, 
   Palette, 
   TrendingUp,
-  Zap,
   Users,
   ShoppingBag,
   Heart,
-  Eye,
-  Sparkles,
   ArrowRight,
   CheckCircle
 } from "lucide-react";
 import { Button } from "@/components/atoms/Button";
-import { Badge } from "@/components/atoms/Badge";
 import { cn, fadeInUp, staggerChildren } from "@/lib/utils";
 
 interface ProductFeaturesProps {
@@ -215,7 +211,7 @@ export function ProductFeatures({ className }: ProductFeaturesProps) {
           </motion.h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {additionalFeatures.map((feature, index) => (
+            {additionalFeatures.map((feature) => (
               <motion.div
                 key={feature.title}
                 variants={fadeInUp}

@@ -78,7 +78,7 @@ export function PricingSection({ className }: PricingSectionProps) {
           viewport={{ once: true }}
           className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto"
         >
-          {pricingTiers.map((tier, index) => (
+          {pricingTiers.map((tier) => (
             <motion.div
               key={tier.id}
               variants={fadeInUp}

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Play, ArrowRight, Sparkles, Zap } from "lucide-react";
+import { Play, ArrowRight, Sparkles, Zap, X } from "lucide-react";
 import { Button } from "@/components/atoms/Button";
 import { Badge } from "@/components/atoms/Badge";
 import { cn, fadeInUp, staggerChildren } from "@/lib/utils";

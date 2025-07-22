@@ -169,7 +169,7 @@ export interface ChatMessage {
   role: "user" | "assistant";
   timestamp: string;
   type?: "text" | "image" | "outfit-recommendation";
-  metadata?: any;
+  metadata?: Record<string, unknown>;
 }
 
 export interface ChatSession {
@@ -208,7 +208,7 @@ export interface Avatar3D {
 }
 
 // API Response Types
-export interface APIResponse<T = any> {
+export interface APIResponse<T = unknown> {
   success: boolean;
   data?: T;
   error?: string;
@@ -246,14 +246,7 @@ export interface ComponentProps {
   children?: React.ReactNode;
 }
 
-export interface MotionProps {
-  initial?: any;
-  animate?: any;
-  exit?: any;
-  transition?: any;
-  whileHover?: any;
-  whileTap?: any;
-}
+export type { MotionProps } from "framer-motion";
 
 // Error Types
 export interface ErrorInfo {

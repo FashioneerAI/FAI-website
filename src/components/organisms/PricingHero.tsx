@@ -94,7 +94,7 @@ export function PricingHero({ className }: PricingHeroProps) {
           animate="animate"
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto pb-20"
         >
-          {pricingTiers.map((tier, index) => (
+          {pricingTiers.map((tier) => (
             <motion.div
               key={tier.id}
               variants={fadeInUp}

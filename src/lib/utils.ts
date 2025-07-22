@@ -26,7 +26,7 @@ export function truncateText(text: string, length: number): string {
   return text.substring(0, length).trim() + "...";
 }
 
-export function debounce<T extends (...args: any[]) => void>(
+export function debounce<T extends (...args: unknown[]) => void>(
   func: T,
   delay: number
 ): (...args: Parameters<T>) => void {
@@ -37,7 +37,7 @@ export function debounce<T extends (...args: any[]) => void>(
   };
 }
 
-export function throttle<T extends (...args: any[]) => void>(
+export function throttle<T extends (...args: unknown[]) => void>(
   func: T,
   limit: number
 ): (...args: Parameters<T>) => void {

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Badge } from "@/components/atoms/Badge";
 import { cn, fadeInUp, staggerChildren } from "@/lib/utils";
 

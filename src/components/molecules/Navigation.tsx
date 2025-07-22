@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/atoms/Button";
 import { cn } from "@/lib/utils";
 import { navConfig } from "@/lib/config";
@@ -85,10 +85,14 @@ export function Navigation({ className }: NavigationProps) {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" size="sm" asChild>
-            <Link href="/app">Sign In</Link>
+            <span>
+              <Link href="/app">Sign In</Link>
+            </span>
           </Button>
           <Button size="sm" asChild>
-            <Link href="/contact">Get Early Access</Link>
+            <span>
+              <Link href="/contact">Get Early Access</Link>
+            </span>
           </Button>
         </div>
 
@@ -126,10 +130,14 @@ export function Navigation({ className }: NavigationProps) {
               </nav>
               <div className="mt-4 flex flex-col space-y-2">
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="/app">Sign In</Link>
+                  <span>
+                    <Link href="/app">Sign In</Link>
+                  </span>
                 </Button>
                 <Button size="sm" asChild>
-                  <Link href="/contact">Get Early Access</Link>
+                  <span>
+                    <Link href="/contact">Get Early Access</Link>
+                  </span>
                 </Button>
               </div>
             </div>

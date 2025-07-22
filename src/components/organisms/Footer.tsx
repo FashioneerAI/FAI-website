@@ -15,8 +15,8 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/atoms/Button";
 import { Input } from "@/components/atoms/Input";
-import { cn, fadeInUp } from "@/lib/utils";
-import { siteConfig, navConfig } from "@/lib/config";
+import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/config";
 
 interface FooterProps {
   className?: string;

@@ -13,7 +13,6 @@ import {
   Sparkles
 } from "lucide-react";
 import { Button } from "@/components/atoms/Button";
-import { Input } from "@/components/atoms/Input";
 import { Badge } from "@/components/atoms/Badge";
 import { cn } from "@/lib/utils";
 
