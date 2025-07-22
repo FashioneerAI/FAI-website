@@ -14,8 +14,8 @@ const badgeVariants = cva(
         destructive: "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
         outline: "text-foreground border-input bg-background hover:bg-accent hover:text-accent-foreground",
         success: "border-transparent bg-green-500 text-white shadow hover:bg-green-500/80",
-        warning: "border-transparent bg-warning-gold text-black shadow hover:bg-warning-gold/80",
-        gradient: "border-transparent bg-gradient-to-r from-primary to-warning-gold text-white shadow",
+        warning: "border-transparent bg-accent text-white shadow hover:bg-accent/80",
+        gradient: "border-transparent bg-gradient-to-r from-primary to-accent text-white shadow",
       },
       size: {
         default: "px-3 py-1 text-xs",

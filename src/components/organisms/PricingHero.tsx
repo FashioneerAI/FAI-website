@@ -16,10 +16,10 @@ export function PricingHero({ className }: PricingHeroProps) {
   const [isYearly, setIsYearly] = React.useState(false);
 
   return (
-    <section className={cn("relative overflow-hidden bg-gradient-to-br from-background via-background to-powder-pink/20 pt-16", className)}>
+    <section className={cn("relative overflow-hidden bg-gradient-to-br from-background via-background to-secondary/20 pt-16", className)}>
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-black/[0.02] bg-[size:60px_60px]" />
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/20 to-warning-gold/20 rounded-full blur-3xl" />
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
       
       <div className="container relative">
         <motion.div
@@ -158,7 +158,7 @@ export function PricingHero({ className }: PricingHeroProps) {
               </div>
 
               {tier.popular && (
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-warning-gold/5 pointer-events-none" />
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 pointer-events-none" />
               )}
             </motion.div>
           ))}
@@ -171,7 +171,7 @@ export function PricingHero({ className }: PricingHeroProps) {
           animate="animate"
           className="text-center pb-20"
         >
-          <div className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-3xl p-8 md:p-12 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12 max-w-4xl mx-auto">
             <Zap className="h-16 w-16 text-primary mx-auto mb-6" />
             <h3 className="font-display text-3xl md:text-4xl font-bold mb-4">
               Need Something Custom?

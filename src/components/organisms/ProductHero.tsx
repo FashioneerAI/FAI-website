@@ -13,10 +13,10 @@ interface ProductHeroProps {
 
 export function ProductHero({ className }: ProductHeroProps) {
   return (
-    <section className={cn("relative overflow-hidden bg-gradient-to-br from-background via-background to-powder-pink/20 pt-16", className)}>
+    <section className={cn("relative overflow-hidden bg-gradient-to-br from-background via-background to-secondary/20 pt-16", className)}>
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-black/[0.02] bg-[size:60px_60px]" />
-      <div className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-l from-primary/20 to-warning-gold/20 rounded-full blur-3xl" />
+      <div className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-l from-primary/20 to-accent/20 rounded-full blur-3xl" />
       
       <div className="container relative">
         <motion.div

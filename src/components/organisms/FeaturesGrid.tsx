@@ -127,7 +127,7 @@ export function FeaturesGrid({ className }: FeaturesGridProps) {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
         >
           {features.map((feature, index) => (
             <motion.div
@@ -153,7 +153,7 @@ export function FeaturesGrid({ className }: FeaturesGridProps) {
                 </p>
                 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-warning-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
           ))}
@@ -167,7 +167,7 @@ export function FeaturesGrid({ className }: FeaturesGridProps) {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
               Experience All Features
             </h3>

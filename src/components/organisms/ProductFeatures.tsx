@@ -193,7 +193,7 @@ export function ProductFeatures({ className }: ProductFeaturesProps) {
                 
                 {/* Decorative Elements */}
                 <div className="absolute top-4 right-4 w-8 h-8 bg-primary/20 rounded-full" />
-                <div className="absolute bottom-4 left-4 w-6 h-6 bg-warning-gold/20 rounded-full" />
+                <div className="absolute bottom-4 left-4 w-6 h-6 bg-accent/20 rounded-full" />
               </div>
             </motion.div>
           ))}
@@ -245,7 +245,7 @@ export function ProductFeatures({ className }: ProductFeaturesProps) {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <div className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
               Ready to Transform Your Style?
             </h3>

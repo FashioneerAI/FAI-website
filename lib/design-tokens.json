@@ -1,11 +1,13 @@
 {
   "colors": {
     "brand": {
-      "digital-pink": "#F15CFF",
-      "powder-pink": "#F5D4E8",
-      "luxe-black": "#000000",
-      "platinum": "#EDEDED",
-      "warning-gold": "#FFDB4D"
+      "rich-black": "#0C0C0E",
+      "cosmic-purple": "#4B1FA3",
+      "transformative-teal": "#1E8A9E",
+      "sage-stone": "#9BB29B",
+      "mocha-mousse": "#C7B0A1",
+      "tech-silver": "#C4C5C7",
+      "snow-white": "#F7F7F8"
     },
     "semantic": {
       "success": "#10B981",

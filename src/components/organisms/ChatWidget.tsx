@@ -106,7 +106,7 @@ export function ChatWidget({ className }: ChatWidgetProps) {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
-            className={cn("fixed bottom-6 right-6 z-50", className)}
+            className={cn("fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50", className)}
           >
             <Button
               onClick={() => setIsOpen(true)}
@@ -137,14 +137,14 @@ export function ChatWidget({ className }: ChatWidgetProps) {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.8, opacity: 0, y: 20 }}
             className={cn(
-              "fixed bottom-6 right-6 z-50 w-96 bg-card border border-border rounded-2xl shadow-2xl overflow-hidden",
+              "fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-[calc(100vw-2rem)] max-w-96 bg-card border border-border rounded-2xl shadow-2xl overflow-hidden",
               isMinimized && "h-16",
-              !isMinimized && "h-[600px]",
+              !isMinimized && "h-[calc(100vh-8rem)] sm:h-[600px]",
               className
             )}
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-primary to-warning-gold text-white">
+            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-primary to-accent text-white">
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                   <Bot className="h-4 w-4" />
@@ -174,7 +174,7 @@ export function ChatWidget({ className }: ChatWidgetProps) {
             {!isMinimized && (
               <>
                 {/* Messages */}
-                <div className="flex-1 p-4 space-y-4 h-[480px] overflow-y-auto">
+                <div className="flex-1 p-4 space-y-4 h-[calc(100%-8rem)] sm:h-[480px] overflow-y-auto">
                   {messages.map((msg) => (
                     <div
                       key={msg.id}
@@ -188,7 +188,7 @@ export function ChatWidget({ className }: ChatWidgetProps) {
                         "w-8 h-8 rounded-full flex items-center justify-center shrink-0",
                         msg.role === "user" 
                           ? "bg-primary text-white" 
-                          : "bg-gradient-to-r from-primary to-warning-gold text-white"
+                          : "bg-gradient-to-r from-primary to-accent text-white"
                       )}>
                         {msg.role === "user" ? <User className="h-4 w-4" /> : <Bot className="h-4 w-4" />}
                       </div>
@@ -214,7 +214,7 @@ export function ChatWidget({ className }: ChatWidgetProps) {
                   {/* Typing indicator */}
                   {isTyping && (
                     <div className="flex space-x-3">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-warning-gold flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
                         <Bot className="h-4 w-4 text-white" />
                       </div>
                       <div className="bg-muted p-3 rounded-2xl rounded-bl-sm">

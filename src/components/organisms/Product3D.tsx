@@ -71,7 +71,7 @@ export function Product3D({ className }: Product3DProps) {
           >
             <div className="relative bg-gradient-to-br from-muted/50 to-muted/20 rounded-3xl p-8 min-h-[600px] border border-border">
               {/* 3D Viewer Placeholder */}
-              <div className="relative w-full h-full flex items-center justify-center rounded-2xl bg-gradient-to-br from-primary/10 to-warning-gold/10 border-2 border-dashed border-primary/30">
+              <div className="relative w-full h-full flex items-center justify-center rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-dashed border-primary/30">
                 <div className="text-center">
                   <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Shirt className="h-12 w-12 text-primary" />

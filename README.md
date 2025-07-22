@@ -110,13 +110,15 @@ npm run lint         # Run ESLint
 
 ## 🎨 Design System
 
-### **Colors**
+### **Colors - 2025 Unisex Palette**
 ```css
---color-digital-pink: #F15CFF    /* Primary brand color */
---color-powder-pink: #F5D4E8     /* Secondary/accent */
---color-luxe-black: #000000      /* Text/contrast */
---color-platinum: #EDEDED        /* Light backgrounds */
---color-warning-gold: #FFDB4D    /* Interactive highlights */
+--color-rich-black: #0C0C0E        /* Body copy, darkest surfaces */
+--color-cosmic-purple: #4B1FA3     /* Primary brand accent, hero gradient */
+--color-transformative-teal: #1E8A9E /* CTA buttons, links, data-viz */
+--color-sage-stone: #9BB29B        /* Card backgrounds, illustrations */
+--color-mocha-mousse: #C7B0A1      /* Secondary sections, hover states */
+--color-tech-silver: #C4C5C7       /* Hairlines, icons, borders */
+--color-snow-white: #F7F7F8        /* Light mode surfaces */
 ```
 
 ### **Typography**

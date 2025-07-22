@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bodoni_Moda } from "next/font/google";
+import { Navigation } from "@/components/molecules/Navigation";
+import { Footer } from "@/components/organisms/Footer";
 import { ChatWidget } from "@/components/organisms/ChatWidget";
 import "./globals.css";
 
@@ -76,7 +78,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${bodoniModa.variable} font-ui antialiased`}
       >
-        {children}
+        <Navigation />
+        <main>{children}</main>
+        <Footer />
         <ChatWidget />
       </body>
     </html>

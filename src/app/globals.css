@@ -1,68 +1,80 @@
 @import "tailwindcss";
 
-/* Fashioneer.ai Brand System */
+/* Fashioneer.ai Brand System - 2025 Unisex Color Palette */
 :root {
   /* Brand Colors */
-  --color-digital-pink: #F15CFF;
-  --color-powder-pink: #F5D4E8;
-  --color-luxe-black: #000000;
-  --color-platinum: #EDEDED;
-  --color-warning-gold: #FFDB4D;
+  --color-rich-black: #0C0C0E;
+  --color-cosmic-purple: #4B1FA3;
+  --color-transformative-teal: #1E8A9E;
+  --color-sage-stone: #9BB29B;
+  --color-mocha-mousse: #C7B0A1;
+  --color-tech-silver: #C4C5C7;
+  --color-snow-white: #F7F7F8;
   
   /* Light mode colors */
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: var(--color-snow-white);
+  --foreground: var(--color-rich-black);
   --card: #ffffff;
-  --card-foreground: #000000;
+  --card-foreground: var(--color-rich-black);
   --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #F15CFF;
+  --popover-foreground: var(--color-rich-black);
+  --primary: var(--color-cosmic-purple);
   --primary-foreground: #ffffff;
-  --secondary: #F5D4E8;
-  --secondary-foreground: #000000;
-  --muted: #EDEDED;
-  --muted-foreground: #525252;
-  --accent: #F5D4E8;
-  --accent-foreground: #000000;
+  --secondary: var(--color-sage-stone);
+  --secondary-foreground: var(--color-rich-black);
+  --muted: var(--color-mocha-mousse);
+  --muted-foreground: var(--color-rich-black);
+  --accent: var(--color-transformative-teal);
+  --accent-foreground: #ffffff;
   --destructive: #EF4444;
   --destructive-foreground: #ffffff;
-  --border: #E5E5E5;
-  --input: #E5E5E5;
-  --ring: #F15CFF;
+  --border: var(--color-tech-silver);
+  --input: var(--color-tech-silver);
+  --ring: var(--color-cosmic-purple);
   --radius: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #EDEDED;
+    --background: var(--color-rich-black);
+    --foreground: var(--color-snow-white);
     --card: #171717;
-    --card-foreground: #EDEDED;
+    --card-foreground: var(--color-snow-white);
     --popover: #171717;
-    --popover-foreground: #EDEDED;
-    --primary: #F15CFF;
-    --primary-foreground: #000000;
-    --secondary: #262626;
-    --secondary-foreground: #EDEDED;
-    --muted: #262626;
-    --muted-foreground: #A3A3A3;
-    --accent: #262626;
-    --accent-foreground: #EDEDED;
+    --popover-foreground: var(--color-snow-white);
+    --primary: var(--color-cosmic-purple);
+    --primary-foreground: var(--color-snow-white);
+    --secondary: var(--color-sage-stone);
+    --secondary-foreground: var(--color-rich-black);
+    --muted: var(--color-mocha-mousse);
+    --muted-foreground: var(--color-tech-silver);
+    --accent: var(--color-transformative-teal);
+    --accent-foreground: var(--color-snow-white);
     --destructive: #EF4444;
-    --destructive-foreground: #EDEDED;
-    --border: #262626;
-    --input: #262626;
-    --ring: #F15CFF;
+    --destructive-foreground: var(--color-snow-white);
+    --border: var(--color-tech-silver);
+    --input: var(--color-tech-silver);
+    --ring: var(--color-cosmic-purple);
   }
 }
 
 @theme inline {
+  /* Responsive Breakpoints */
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
   /* Brand colors */
-  --color-digital-pink: var(--color-digital-pink);
-  --color-powder-pink: var(--color-powder-pink);
-  --color-luxe-black: var(--color-luxe-black);
-  --color-platinum: var(--color-platinum);
-  --color-warning-gold: var(--color-warning-gold);
+  --color-rich-black: var(--color-rich-black);
+  --color-cosmic-purple: var(--color-cosmic-purple);
+  --color-transformative-teal: var(--color-transformative-teal);
+  --color-sage-stone: var(--color-sage-stone);
+  --color-mocha-mousse: var(--color-mocha-mousse);
+  --color-tech-silver: var(--color-tech-silver);
+  --color-snow-white: var(--color-snow-white);
   
   /* Core colors */
   --color-background: var(--background);
@@ -105,6 +117,49 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive container improvements */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) { /* sm */
+  .container {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .container {
+    max-width: 1024px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) { /* 2xl */
+  .container {
+    max-width: 1536px;
+  }
 }
 
 /* Reduced motion preferences */
@@ -159,14 +214,14 @@ body {
 
 /* Utility classes */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary), var(--warning-gold));
+  background: linear-gradient(135deg, var(--color-cosmic-purple), var(--color-transformative-teal));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, var(--color-cosmic-purple), var(--color-transformative-teal));
 }
 
 .glass-effect {
@@ -177,7 +232,7 @@ body {
 }
 
 .shadow-brand {
-  box-shadow: 0 10px 40px -12px rgba(241, 92, 255, 0.3);
+  box-shadow: 0 10px 40px -12px rgba(75, 31, 163, 0.3);
 }
 
 /* Animation keyframes */

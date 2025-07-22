@@ -81,7 +81,7 @@ export function Footer({ className }: FooterProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-3xl p-8 md:p-12 text-center"
+          className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12 text-center"
         >
           <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
             Stay Updated with Fashion AI
@@ -109,11 +109,11 @@ export function Footer({ className }: FooterProps) {
 
       {/* Main Footer */}
       <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-warning-gold flex items-center justify-center">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <span className="text-white font-bold text-sm">F</span>
               </div>
               <span className="font-display text-xl font-bold">Fashioneer.ai</span>

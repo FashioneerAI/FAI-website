@@ -66,7 +66,7 @@ export function Navigation({ className }: NavigationProps) {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-warning-gold flex items-center justify-center">
+            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <span className="text-white font-bold text-sm">F</span>
             </div>
             <span className="hidden sm:inline-block font-display text-xl font-bold">

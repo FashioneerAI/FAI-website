@@ -16,7 +16,7 @@ export function PricingSection({ className }: PricingSectionProps) {
   const [isYearly, setIsYearly] = React.useState(false);
 
   return (
-    <section className={cn("py-20 bg-gradient-to-br from-background to-powder-pink/10", className)}>
+    <section className={cn("py-20 bg-gradient-to-br from-background to-secondary/10", className)}>
       <div className="container">
         <motion.div
           variants={staggerChildren}
@@ -76,7 +76,7 @@ export function PricingSection({ className }: PricingSectionProps) {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto"
         >
           {pricingTiers.map((tier, index) => (
             <motion.div
@@ -138,7 +138,7 @@ export function PricingSection({ className }: PricingSectionProps) {
               </div>
 
               {tier.popular && (
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-warning-gold/5 pointer-events-none" />
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 pointer-events-none" />
               )}
             </motion.div>
           ))}
@@ -152,7 +152,7 @@ export function PricingSection({ className }: PricingSectionProps) {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12">
             <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
               Need Something Custom?

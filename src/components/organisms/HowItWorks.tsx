@@ -67,7 +67,7 @@ export function HowItWorks({ className }: HowItWorksProps) {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8"
           >
             {steps.map((step, index) => (
               <motion.div
@@ -99,7 +99,7 @@ export function HowItWorks({ className }: HowItWorksProps) {
                   </p>
                   
                   {/* Hover Effect */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-warning-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 
                 {/* Arrow (Desktop) */}
@@ -121,7 +121,7 @@ export function HowItWorks({ className }: HowItWorksProps) {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <div className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
               Ready to Transform Your Style?
             </h3>

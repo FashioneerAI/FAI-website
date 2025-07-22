@@ -107,7 +107,7 @@ export function ContactForm({ className }: ContactFormProps) {
             </motion.div>
 
             <motion.form onSubmit={handleSubmit} variants={fadeInUp} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <Input
                   name="name"
                   label="Full Name"
@@ -247,7 +247,7 @@ export function ContactForm({ className }: ContactFormProps) {
               </div>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="bg-gradient-to-r from-primary/10 to-warning-gold/10 rounded-2xl p-6">
+            <motion.div variants={fadeInUp} className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6">
               <h4 className="font-semibold mb-3">Not sure where to start?</h4>
               <p className="text-muted-foreground text-sm mb-4">
                 Book a 15-minute call with our team to discuss your needs and explore how 

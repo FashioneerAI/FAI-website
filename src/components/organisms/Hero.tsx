@@ -16,10 +16,10 @@ export function Hero({ className }: HeroProps) {
   const [videoOpen, setVideoOpen] = React.useState(false);
 
   return (
-    <section className={cn("relative overflow-hidden bg-gradient-to-br from-background via-background to-powder-pink/20", className)}>
+    <section className={cn("relative overflow-hidden bg-gradient-to-br from-background via-background to-secondary/20", className)}>
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-black/[0.02] bg-[size:60px_60px]" />
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/20 to-warning-gold/20 rounded-full blur-3xl" />
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
       
       <div className="container relative">
         <motion.div
@@ -39,7 +39,7 @@ export function Hero({ className }: HeroProps) {
           {/* Main Headline */}
           <motion.h1
             variants={fadeInUp}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+            className="font-display text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight mb-6"
           >
             Pioneering the{" "}
             <span className="gradient-text">Future</span>
@@ -50,7 +50,7 @@ export function Hero({ className }: HeroProps) {
           {/* Subheadline */}
           <motion.p
             variants={fadeInUp}
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0"
           >
             Empower your style with AI-powered fashion assistance, 3D virtual try-on, 
             and voice-cloned storytelling. Discover, preview, and perfect outfits like never before.
@@ -59,18 +59,18 @@ export function Hero({ className }: HeroProps) {
           {/* CTA Buttons */}
           <motion.div
             variants={fadeInUp}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 px-4 sm:px-0"
           >
-            <Button size="xl" className="group">
+            <Button size="lg" className="group w-full sm:w-auto">
               Get Early Access
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             
             <Button
               variant="outline"
-              size="xl"
+              size="lg"
               onClick={() => setVideoOpen(true)}
-              className="group"
+              className="group w-full sm:w-auto"
             >
               <Play className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
               Watch Demo
@@ -103,7 +103,7 @@ export function Hero({ className }: HeroProps) {
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-foreground flex items-center justify-center">
                 {socialProof.averageRating}
-                <span className="text-warning-gold ml-1">★</span>
+                <span className="text-accent ml-1">★</span>
               </div>
               <div className="text-sm text-muted-foreground">User Rating</div>
             </div>
@@ -169,7 +169,7 @@ export function Hero({ className }: HeroProps) {
             >
               <X className="h-6 w-6" />
             </button>
-            <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/20 to-warning-gold/20">
+            <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/20 to-accent/20">
               <div className="text-center text-white">
                 <Play className="h-16 w-16 mx-auto mb-4 opacity-80" />
                 <p className="text-lg">Demo video coming soon!</p>
