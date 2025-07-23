@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -65,14 +66,13 @@ export function Navigation({ className }: NavigationProps) {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-white font-bold text-sm">F</span>
-            </div>
-            <span className="hidden sm:inline-block font-display text-xl font-bold">
-              Fashioneer.ai
-            </span>
-          </div>
+          <Image
+            src="/FAI_logo.png"
+            alt="Fashioneer.ai Logo"
+            width={128}
+            height={32}
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}

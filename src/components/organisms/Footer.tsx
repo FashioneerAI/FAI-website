@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   Twitter, 
@@ -113,10 +114,13 @@ export function Footer({ className }: FooterProps) {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-sm">F</span>
-              </div>
-              <span className="font-display text-xl font-bold">Fashioneer.ai</span>
+              <Image
+                src="/FAI_logo.png"
+                alt="Fashioneer.ai Logo"
+                width={128}
+                height={32}
+                className="h-8 w-auto"
+              />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Pioneering the future of personal style with AI-powered fashion assistance, 

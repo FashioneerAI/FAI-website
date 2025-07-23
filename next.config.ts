@@ -4,6 +4,9 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,          // ensures /about/ resolves without SSR
   // assetPrefix/basePath can stay empty because we’re at the domain root
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
