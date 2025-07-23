@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "export": "next export -o out",
+    "export": "next export",
     "build:static": "npm run build && npm run export",
     "start": "next start",
     "lint": "next lint"
