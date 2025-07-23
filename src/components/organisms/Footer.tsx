@@ -117,9 +117,9 @@ export function Footer({ className }: FooterProps) {
               <Image
                 src="/FAI_logo.png"
                 alt="Fashioneer.ai Logo"
-                width={48}
-                height={48}
-                className="h-12 w-12"
+                width={64}
+                height={64}
+                className="h-40 w-40"
                 priority
               />
             </Link>
