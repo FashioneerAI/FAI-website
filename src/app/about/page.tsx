@@ -6,24 +6,6 @@ import { Users, Target, Eye } from "lucide-react";
 import { Button } from "@/components/atoms/Button";
 import { cn, fadeInUp, staggerChildren } from "@/lib/utils";
 
-const teamMembers = [
-  {
-    name: "Alex Chen",
-    role: "Founder & CEO",
-    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-  },
-  {
-    name: "Samantha Reed",
-    role: "Head of AI Research",
-    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704e",
-  },
-  {
-    name: "David Lee",
-    role: "Lead 3D Engineer",
-    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704f",
-  },
-];
-
 export default function AboutPage() {
   return (
     <div className="bg-background">
@@ -83,49 +65,6 @@ export default function AboutPage() {
                 <li>Inclusivity</li>
               </ul>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-gradient-to-br from-background to-secondary/10">
-        <div className="container">
-          <motion.div
-            className="text-center mb-16"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerChildren}
-          >
-            <motion.h2
-              variants={fadeInUp}
-              className="font-display text-3xl md:text-5xl font-bold mb-4"
-            >
-              Meet the Team
-            </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-lg text-muted-foreground max-w-2xl mx-auto"
-            >
-              The brilliant minds behind Fashioneer.ai, dedicated to crafting the future of fashion.
-            </motion.p>
-          </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={index}
-                className="text-center"
-                variants={fadeInUp}
-              >
-                <img
-                  src={member.avatar}
-                  alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                />
-                <h3 className="font-semibold text-lg">{member.name}</h3>
-                <p className="text-muted-foreground">{member.role}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
