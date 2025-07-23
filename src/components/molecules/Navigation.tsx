@@ -71,7 +71,7 @@ export function Navigation({ className }: NavigationProps) {
             alt="Fashioneer.ai Logo"
             width={128}
             height={32}
-            className="h-8 w-auto"
+            className="h-8"
           />
         </Link>
 

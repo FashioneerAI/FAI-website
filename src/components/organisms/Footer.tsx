@@ -119,7 +119,7 @@ export function Footer({ className }: FooterProps) {
                 alt="Fashioneer.ai Logo"
                 width={128}
                 height={32}
-                className="h-8 w-auto"
+                className="h-8"
               />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
