@@ -112,13 +112,13 @@ export function FeaturesGrid({ className }: FeaturesGridProps) {
             variants={fadeInUp}
             className="font-display text-3xl md:text-5xl font-bold mb-4"
           >
-            Powerful Features
+            AI-Powered Fashion Tools
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Discover the comprehensive suite of AI-powered tools designed to revolutionize your fashion experience
+            Explore our suite of AI-powered tools, including virtual try-on and AI avatars, to revolutionize your fashion experience.
           </motion.p>
         </motion.div>
 
