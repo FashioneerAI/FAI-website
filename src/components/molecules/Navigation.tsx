@@ -63,15 +63,15 @@ export function Navigation({ className }: NavigationProps) {
         className
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-24 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/FAI_logo.png"
             alt="Fashioneer.ai Logo"
-            width={64}
-            height={64}
-            className="h-16 w-16"
+            width={80}
+            height={80}
+            className="h-30 w-30"
             priority
           />
         </Link>
