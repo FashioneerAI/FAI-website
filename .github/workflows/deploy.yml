@@ -17,7 +17,7 @@ jobs:
           node-version: 20          # or whatever you use
 
       - run: npm ci
-      - run: npm run build:static   # produces /out
+      - run: npm run build          # produces /out
 
       - uses: actions/upload-pages-artifact@v3
         with:
