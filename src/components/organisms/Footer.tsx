@@ -127,15 +127,15 @@ export function Footer({ className }: FooterProps) {
             <div className="space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>202 Eagle Heights Apt A , Madison WI 53705</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>hello@fashioneer.ai</span>
+                <span>admin@fashioneer.ai</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 608 471 2732</span>
               </div>
             </div>
           </div>

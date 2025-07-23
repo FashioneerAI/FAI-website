@@ -64,10 +64,10 @@ export function ContactHero({ className }: ContactHeroProps) {
                 Get in touch via email
               </p>
               <a 
-                href="mailto:hello@fashioneer.ai" 
+                href="mailto:admin@fashioneer.ai" 
                 className="text-primary hover:text-primary/80 transition-colors font-medium"
               >
-                hello@fashioneer.ai
+                admin@fashioneer.ai
               </a>
             </motion.div>
 
@@ -80,10 +80,10 @@ export function ContactHero({ className }: ContactHeroProps) {
                 Speak with our team
               </p>
               <a 
-                href="tel:+15551234567" 
+                href="tel:+16084712732" 
                 className="text-primary hover:text-primary/80 transition-colors font-medium"
               >
-                +1 (555) 123-4567
+                +1 608 471 2732
               </a>
             </motion.div>
 
@@ -96,8 +96,8 @@ export function ContactHero({ className }: ContactHeroProps) {
                 Our headquarters
               </p>
               <address className="text-primary not-italic">
-                San Francisco, CA<br />
-                United States
+                202 Eagle Heights Apt A<br />
+                Madison, WI 53705
               </address>
             </motion.div>
           </motion.div>
