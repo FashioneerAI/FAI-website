@@ -69,9 +69,9 @@ export function Navigation({ className }: NavigationProps) {
           <Image
             src="/FAI_logo.png"
             alt="Fashioneer.ai Logo"
-            width={128}
+            width={32}
             height={32}
-            className="h-8"
+            className="h-8 w-8"
           />
         </Link>
 
