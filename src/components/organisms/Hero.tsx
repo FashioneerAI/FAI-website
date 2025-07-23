@@ -41,10 +41,9 @@ export function Hero({ className }: HeroProps) {
             variants={fadeInUp}
             className="font-display text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight mb-6"
           >
-            Pioneering the{" "}
-            <span className="gradient-text">Future</span>
+            The Future of <span className="gradient-text">Fashion</span> is Here
             <br />
-            of Personal Style
+            with AI and Virtual Try-On
           </motion.h1>
 
           {/* Subheadline */}
@@ -52,8 +51,7 @@ export function Hero({ className }: HeroProps) {
             variants={fadeInUp}
             className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0"
           >
-            Empower your style with AI-powered fashion assistance, 3D virtual try-on, 
-            and voice-cloned storytelling. Discover, preview, and perfect outfits like never before.
+            Experience the revolution in personal style with Fashioneer.ai. Our AI-powered platform offers virtual try-on with your own AI avatar, personalized fashion advice, and a new way to discover and shop for clothes.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -118,9 +116,9 @@ export function Hero({ className }: HeroProps) {
               <div className="mb-4 inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl">
                 <Zap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">AI-Powered Styling</h3>
+              <h3 className="font-semibold text-lg mb-2">AI Fashion Styling</h3>
               <p className="text-muted-foreground text-sm">
-                Get personalized outfit recommendations powered by advanced AI
+                Our advanced AI learns your style to provide personalized fashion recommendations.
               </p>
             </div>
             
@@ -128,9 +126,9 @@ export function Hero({ className }: HeroProps) {
               <div className="mb-4 inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl">
                 <Sparkles className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">3D Virtual Try-On</h3>
+              <h3 className="font-semibold text-lg mb-2">Virtual Try-On with AI Avatar</h3>
               <p className="text-muted-foreground text-sm">
-                See how clothes look on your personalized 3D avatar
+                Create your own AI avatar and try on clothes virtually to see how they fit.
               </p>
             </div>
             

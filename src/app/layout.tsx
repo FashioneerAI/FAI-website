@@ -18,9 +18,9 @@ const bodoniModa = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  title: "Fashioneer.ai - Pioneering the Future of Personal Style",
-  description: "AI-powered fashion assistant platform with 3D try-on, virtual styling, and voice-cloned fashion storytelling. Discover, preview, and perfect your outfits with cutting-edge technology.",
-  keywords: ["AI fashion", "virtual try-on", "3D styling", "fashion technology", "personal style", "AI stylist"],
+  title: "Fashioneer.ai - AI Fashion, Virtual Try-On, and AI Avatars",
+  description: "Experience the future of fashion with Fashioneer.ai. Get personalized styling, create your own AI avatar, and try on clothes virtually with our advanced AI-powered platform. Discover your unique style with the leading AI fashion assistant.",
+  keywords: ["Fashion", "AI", "Virtual Tryon", "AI avatar", "AI fashion", "virtual try-on", "3D styling", "fashion technology", "personal style", "AI stylist"],
   authors: [{ name: "Fashioneer.ai" }],
   creator: "Fashioneer.ai",
   publisher: "Fashioneer.ai",
